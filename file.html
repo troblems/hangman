@@ -1,0 +1,33 @@
+document.querySelector('#some-element')
+
+$('#some-element') // jQuery selects with CSS selectors
+
+// [{props...}, {props...}, {props...}, {props...}, {props...}, {props...}, {props...}]
+
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+var allTheSpans = $('span');
+allTheSpans.each(function() {
+	var theCurrentSpan = $(this);
+});
+
+
+var allTheSpans = document.getElementsByTagName('span');
+
+for ( var i = 0; i < allTheSpans.length; i++ ) {
+	var theCurrentSpan = allTheSpans[i];
+}
+
+
+
+var allTheSpans = document.querySelectorAll('span');
+
+allTheSpans.forEach(function(span) {
+	var theCurrentSpan = span;
+});
