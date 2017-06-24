@@ -9,11 +9,47 @@
 </head>
 
 <body>
+
+  <div id="divvy">
+<input type="button" value="A"  onclick="msga()"/>
+<input type="button" value="B"  onclick="msgb()"/>
+<input type="button" value="C" onclick="msgc()"/>
+<input type="button" value="D" onclick="msgd()"/>
+<input type="button" value="E" onclick="msge()"/>
+<input type="button" value="F" onclick="msgf()" />
+<input type="button" value="G" onclick="msgg()"/>
+<input type="button" value="H" onclick="msgh()"/>
+<input type="button" value="I" onclick="msgi()" />
+<input type="button" value="J" onclick="msgj()"/>
+<input type="button" value="K" onclick="msgk()"/>
+<input type="button" value="L" onclick="msgl()" />
+<input type="button" value="M" onclick="msgm()"/>
+<input type="button" value="N" onclick="msgn()"/>
+<input type="button" value="O" onclick="msgo()" />
+<input type="button" value="P" onclick="msgp()"/>
+<input type="button" value="Q" onclick="msgq()"/>
+<input type="button" value="R" onclick="msgr()" />
+<input type="button" value="S" onclick="msgs()"/>
+<input type="button" value="T" onclick="msgt()"/>
+<input type="button" value="U" onclick="msgu()"/>
+<input type="button" value="V" onclick="msgv()"/>
+<input type="button" value="W" onclick="msgw()"/>
+<input type="button" value="X" onclick="msgx()"/>
+<input type="button" value="Y" onclick="msgy()"/>
+<input type="button" value="Z" onclick="msgz()"/>
+<input type="button" value="Start Game" onclick="chooseWord()"/>
+  </div>
+  <div id="butts">
+
   </div>
 
 
   <script>
-
+  var words;
+var chooseWord;
+var userGuess;
+var msga;
+var check;
     //select random word - math.random
     //present rules to user - include length of word
     //take users input
@@ -25,20 +61,41 @@
     //function getUserSelectedLetter() {
     //console.log($(this).text());
 
-    var words = ["Pearl", "Amethyst", "Rose Quartz", "Peridot", "Ruby", "Saphire", "Bismuth", "Yellow Diamond", "Blue Diamond", "Pink Diamond", "White Diamond", "Jasper", "Holly Blue Agate", "Topaz", "Lapis Lazuli", "Garnet", "Opal", "Sugilite",
-      "Alexandrite"
-    ]
-    var word = words[Math.floor(Math.floor() * words.length)];
+function msga(){
+  var check = words.indexOf("A");
+  if (check = -1)
+    document.getElementById("butts").innerHTML = "a is not here";
+};
 
-    var blanks = [];
+function msgb(){
+  var check = words.indexOf("B");
+  document.getElementById("butts").innerHTML = "b";
+};
+
+function chooseWord() {
+  var words = ["Pearl"] /*"Amethyst", "Rose Quartz", "Peridot", "Ruby", "Saphire", "Bismuth"];
+  return words[parseInt(Math.random()*words.length)];*/
+};
+
+
+
+
+    /*function blanksFromAnswer ( answerWord ) {
+    var result = "";};
+    for ( i in answerWord ) {
+        result = "_" + result;
+    };
+    return result;
     for (var i = 0; i < word.length; i++) {
-      blanks[i] = "*";
-    }
-    var remainingLetters = word.length;
+      blanks[i] = "_";
+    };
+  };
+  function win () { alert('You win!');  resetGame() ;};
+  function lose () { alert('Oh no, you lose!'); resetGame(); };*/
 
-    if (remainingLetters > 0) {
 
-    }
+
+
   </script>
 </body>
 
